@@ -44,4 +44,16 @@ table{
     border-color: black;
     background-color: transparent;
     margin: 0px auto;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+    
+table th {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+table td {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
 }
