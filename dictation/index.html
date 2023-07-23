@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <title>上海高考文言文300实词自测</title>
+</head>
+
+<body>
+    <h1>上海高考文言文300实词自测</h1>
+    <div id="question"></div>
+    <input id="keyword" placeholder="输入你的答案..."></input>
+    <button onclick="next()">下一个</button>
+    <script>
+        let data = null, currentIndex = -1;
+        window.onload = async () => {
+            data = await fetch('https://' + window.location.host + '/data/test.json').then(res => res.json())
+        }
+        const next = () => {
+            currentIndex = Math.floor(Math.random() * data.length);
+            let num = currentIndex, res = data[currentIndex][4] + ' ' + data[currentIndex][5];
+            while (data[num][1] == null) num--;
+            document.getElementById('question').innerText = data[num][1] + ' ' + res;
+        }
+    </script>
+</body>

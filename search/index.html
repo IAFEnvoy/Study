@@ -19,10 +19,10 @@
             let keyword = document.getElementById('keyword').value;
             for (let i = 0; i < data.length; i++)
                 if (data[i][1] != null && data[i][1] == keyword) {
-                    document.getElementById('result').innerText += data[i].join(' ');
+                    document.getElementById('result').innerText += data[i].join(' ') + '\n';
                     i++;
                     while (data[i][1] == null) {
-                        document.getElementById('result').innerText += data[i].join(' ');
+                        document.getElementById('result').innerText += data[i].join(' ') + '\n';
                         i++;
                     }
                 }
