@@ -8,7 +8,7 @@
     <h1>上海高考文言文300实词查询</h1>
     <input id="keyword" placeholder="输入实词单字查询..."></input>
     <button onclick="search()">查找</button>
-    <div id="result"></div>
+    <table id="result" border="1"></table>
     <script>
         let data = null;
         window.onload = async () => {
@@ -19,10 +19,10 @@
             let keyword = document.getElementById('keyword').value;
             for (let i = 0; i < data.length; i++)
                 if (data[i][1] != null && data[i][1] == keyword) {
-                    document.getElementById('result').innerText += data[i].join(' ') + '\n';
+                    document.getElementById('result').innerText += `<tr><td>${data[i].join('</td><td>')}</td></tr>`;
                     i++;
                     while (data[i][1] == null) {
-                        document.getElementById('result').innerText += data[i].join(' ') + '\n';
+                        document.getElementById('result').innerText += `<tr><td>${data[i].join('</td><td>')}</td></tr>`;
                         i++;
                     }
                 }
