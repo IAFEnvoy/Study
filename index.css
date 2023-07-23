@@ -1,0 +1,22 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'LiSu';
+    font-size: xx-large;
+    color: cyan;
+}
+
+button {
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: cyan;
+    font-weight: 200;
+    border-color: cyan;
+    background-color: gray;
+}
