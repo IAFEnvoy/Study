@@ -36,24 +36,34 @@ button {
     background-color: gray;
 }
 
-table{
+table {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    color:black;
+    color: black;
     border-color: black;
     background-color: transparent;
     margin: 0px auto;
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000;
+    border: 1px solid #333;
+    border-style: solid;
+    border-collapse: collapse;
 }
-    
-table th {
+
+th {
     border-left: 1px solid #000000;
     border-top: 1px solid #000000;
 }
 
-table td {
+td {
     border-left: 1px solid #000000;
     border-top: 1px solid #000000;
+    border: 1px solid #333;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
 }
