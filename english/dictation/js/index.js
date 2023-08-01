@@ -8,5 +8,5 @@ const check = () => {
 }
 const next = () => {
     currentIndex = Math.floor(Math.random() * data.length);
-    document.getElementById('question').innerText = data[currentIndex][2] + ' ' + data[currentIndex][3];
+    document.getElementById('question').innerText = data[currentIndex][1] + ' ' + data[currentIndex][2];
 }
