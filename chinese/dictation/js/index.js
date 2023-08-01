@@ -1,6 +1,6 @@
 let data = null, currentIndex = -1;
 window.onload = async () => {
-    data = await fetch('https://' + window.location.host + '/data/test.json').then(res => res.json())
+    data = await fetch('https://' + window.location.host + '/data/chinese.json').then(res => res.json())
 }
 const check = () => {
     let num = currentIndex;

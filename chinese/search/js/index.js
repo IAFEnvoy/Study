@@ -1,6 +1,6 @@
 let data = null;
 window.onload = async () => {
-    data = await fetch('https://' + window.location.host + '/data/test.json').then(res => res.json())
+    data = await fetch('https://' + window.location.host + '/data/chinese.json').then(res => res.json())
 }
 const search = () => {
     document.getElementById('result').innerHTML = '';
@@ -15,5 +15,5 @@ const search = () => {
             }
         }
     if (document.getElementById('result').innerHTML == '')
-        document.getElementById('result').innerHTML = '未找到搜索结果'
+        document.getElementById('result').innerHTML = '未找到搜索结果';
 }

@@ -1,0 +1,69 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'LiSu';
+    font-size: xx-large;
+    color: cyan;
+}
+
+input {
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    padding-left: 10px;
+    color: cyan;
+    font-weight: 200;
+    border-color: cyan;
+    background-color: gray;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(0, 128, 128);
+}
+
+button {
+    text-align: center;
+    font-size: large;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: cyan;
+    font-weight: 200;
+    border-color: cyan;
+    background-color: gray;
+}
+
+table {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    border-color: black;
+    background-color: transparent;
+    margin: 0px auto;
+    border: 1px solid #333;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+th {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+td {
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    border: 1px solid #333;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
