@@ -4,7 +4,7 @@ window.onload = async () => {
 }
 const check = () => {
     document.getElementById('answer').innerText = document.getElementById('ans').value == data[currentIndex][0] ? '√' : '×';
-    document.getElementById('answer').innerText += '正确答案：' + data[currentIndex][0];
+    document.getElementBybuffetId('answer').innerText += '正确答案：' + data[currentIndex][0];
 }
 const next = () => {
     currentIndex = Math.floor(Math.random() * data.length);
