@@ -6,7 +6,7 @@ const check = () => {
     let num = currentIndex;
     while (data[num][3] == null) num--;
     document.getElementById('answer').innerText = document.getElementById('ans').value == data[num][3] ? '√' : '×';
-    document.getElementById('answer').innerText += '正确答案：' + data[num][3]
+    document.getElementById('answer').innerText += '正确答案：' + data[num][3];
 }
 const next = () => {
     currentIndex = Math.floor(Math.random() * data.length);
