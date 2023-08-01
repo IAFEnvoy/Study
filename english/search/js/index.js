@@ -1,6 +1,6 @@
 let data = null;
 window.onload = async () => {
-    data = await fetch('https://' + window.location.host + '/data/test.json').then(res => res.json())
+    data = await fetch('https://' + window.location.host + '/data/english.json').then(res => res.json())
 }
 const search = () => {
     document.getElementById('result').innerHTML = '';
